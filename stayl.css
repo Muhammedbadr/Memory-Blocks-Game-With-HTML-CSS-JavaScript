@@ -1,0 +1,127 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  sans-serif;
+}
+
+.start-button{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color:rgba(30, 30, 30, 0.9);
+}
+.start-button span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:red;
+    color: white;
+    padding: 15px 45px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.info{
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto 0;
+    background-color: rgb(252, 244, 239);
+    border: 1px solid orange;
+    font-size: large;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.momery-game-black{
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 20px auto ;
+    
+}
+
+
+.momery-game-black .game-black{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid rgb(198, 97, 3);
+    border-radius: 10px;
+    background-color:rgb(240, 240, 240);
+    transition: transform .5s;
+    position: relative;
+    cursor: grab;
+    flex: 1 0  200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+
+
+}
+.momery-game-black .game-black .front{
+    background-color: gray;
+    line-height: 200px;
+}
+
+.momery-game-black .game-black .front::before{
+    content: "?";
+    color: white;
+    font-size: 140px ;
+    font-weight: bold;
+}
+.momery-game-black .game-black .back{
+    
+    transform: rotateY(180deg);
+}
+.momery-game-black .game-black .back i {
+    font-size: 90px;
+    color: green;
+}
+.momery-game-black .game-black .face{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border: 5px solid orange;
+    border-radius:10px;
+} 
+
+
+
+.momery-game-black .game-black.is-flipped,
+.momery-game-black .game-black.is-matched
+{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform:rotateY(180deg) ;
+    transform: rotateY(180deg);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* }.momery-game-black .game-black{
+    margin: 10px ;  
+}
+
+}
+
+
+*/
+
+.no_clik{
+    pointer-events: none; 
+    
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Blocks Game With HTML, CSS, JavaScript </title>
+    <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="/stayl.css">
+</head>
+<body >
+    <div class="contaner">
+
+        <div class="start-button">
+            <span>Try agin</span>
+        </div>
+
+        <div class="info">
+            <div class="name">
+                Hello: <span></span>
+            </div>
+            <div class="wrong-total">
+                Wrong-Total : <span>0</span>
+            </div>
+        </div>
+
+        <div class="momery-game-black">
+            <!-- image1 -->
+            <div class="game-black " data-images="image1">
+                <div class="front face"></div>
+                <div class="face back  ">
+                    <i  class="fa-brands fa-square-js"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image1">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+            </div>
+            <!-- image2 -->
+            <div class="game-black" data-images="image2">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image2">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+            </div>
+            <!-- image3 -->
+            <div class="game-black" data-images="image3">
+                <div class="front face"></div>
+                <div class="back face ">           
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image3">
+                <div class="front face"></div>
+                <div class="back face ">           
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+            </div>
+            <!-- image4 -->
+            <div class="game-black" data-images="image4">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image4">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+            </div>
+            <!-- image5 -->
+            <div class="game-black" data-images="image5">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-node"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image5">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-node"></i>
+                </div>
+            </div>
+            <!-- image6 -->
+            <div class="game-black" data-images="image6">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-solid fa-file-code"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image6">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-solid fa-file-code"></i>
+                </div>
+            </div>
+            <!-- image7 -->
+            <div class="game-black" data-images="image7">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-windows"></i>
+
+                </div>
+            </div>
+            <div class="game-black" data-images="image7">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-windows"></i>
+
+                </div>
+            </div>
+            <!-- image8 -->
+            <div class="game-black" data-images="image8">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image8">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+            </div>
+            <!-- image9 -->
+            <div class="game-black" data-images="image9">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image9">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+            <!-- image10 -->
+            <div class="game-black" data-images="image10">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="game-black" data-images="image10">
+                <div class="front face"></div>
+                <div class="back face ">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <audio id="successful"src="/mixkit-fast-double-click-on-mouse-275.wav" preload="auto"></audio>
+    <audio id="fail"  src="/0501.mp3" preload="auto"></audio>
+    <audio id="correct" src="/correct-winner-sting-tomas-herudek-1-00-05.mp3" preload="auto"></audio>
+    <audio id="myAudio" >
+        <source src="/Focus Music for Work and Studying, Background Music for Better Concentration, Study Music.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+    <script src="/script.js"></script>
+</html>
